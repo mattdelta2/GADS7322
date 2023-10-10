@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Bedroom.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: bd02ac44a7c61c24182dabe15b0d4db4
+  - enabled: 1
+    path: Assets/Scenes/Living Room.unity
+    guid: c895e14ed2659c74598ea6fbd3cd5774
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: c4918e57f60b0ff469e337da23f7f0fd
+  - enabled: 1
+    path: Assets/Scenes/Study.unity
+    guid: 8554d4c240d9beb4596fb2ae68053f45
   m_configObjects: {}
