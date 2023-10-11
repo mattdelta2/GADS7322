@@ -7,14 +7,14 @@ public class Plant : MonoBehaviour
 {
     public int maxWater = 100; // Maximum water the plant can hold.
     public int currentWater = 0; // Current water level of the plant.
-    public float growthRate = 0.01f; // Rate at which the plant grows.
+    public float growthRate; // Rate at which the plant grows.
+    public string plantName = "Plant"; //property for the plants name
 
     public GameObject seedlingSprite; // Reference to the seedling sprite.
     public GameObject matureSprite; // Reference to the mature plant sprite.
     public GameObject floweringSprite; // Reference to the flowering plant sprite.
 
-    public GameObject[] plantPrefabs;
-    public Transform spawnPoint;
+
 
     private PlantState currentState;
 
