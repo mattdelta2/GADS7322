@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
-public class Pllant3 : MonoBehaviour
+public class Plant : MonoBehaviour
 {
     public int maxWater = 100; // Maximum water the plant can hold.
     public int currentWater = 0; // Current water level of the plant.
