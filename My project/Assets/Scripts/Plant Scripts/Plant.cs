@@ -13,6 +13,9 @@ public class Plant : MonoBehaviour
     public GameObject matureSprite; // Reference to the mature plant sprite.
     public GameObject floweringSprite; // Reference to the flowering plant sprite.
 
+    public GameObject[] plantPrefabs;
+    public Transform spawnPoint;
+
     private PlantState currentState;
 
     private enum PlantState
