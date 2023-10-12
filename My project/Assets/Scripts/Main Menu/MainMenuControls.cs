@@ -14,7 +14,7 @@ public class MainMenuControls : MonoBehaviour
     public void Play()
     {
 
-        SceneManager.LoadScene("Study");
+        SceneManager.LoadScene("Game Scene");
     }
 
     public void Quit()

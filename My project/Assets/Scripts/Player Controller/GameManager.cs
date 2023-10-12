@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
 
     public CameraController cameraController;
 
-    private float LivingRoomUnlock = 100f;
+    private float LivingRoomUnlock = 10f;
 
-    private float studyRoomUnlock = 200f;
+    private float studyRoomUnlock = 20f;
 
     private float lastTimeScoored;
 
@@ -40,14 +40,14 @@ public class GameManager : MonoBehaviour
         if(score >= LivingRoomUnlock)
         {
             maxX = 2793F;
-            cameraController.minXMax = new Vector2(282, 2793);
+            cameraController.minXMax = new Vector2(221, 2617);
 
         }
 
         if(score >= studyRoomUnlock)
         {
             maxX = 4732;
-            cameraController.minXMax = new Vector2(282, 4732);
+            cameraController.minXMax = new Vector2(221, 4630);
         }
     }
 
