@@ -105,8 +105,7 @@ MonoBehaviour:
   happySprite: {fileID: 21300000, guid: 804d82257b2a69a40ada1b3cba86c1b7, type: 3}
   sadSprite: {fileID: 21300000, guid: 9c12968b29eaca447899552b34e94392, type: 3}
   waterLevel: 100
-  waterDrainRate: 0.5
-  endScreen: {fileID: 1148136668305367245, guid: 876d83ee7553c3545af3951740279299, type: 3}
+  waterDrainRate: 1.5
 --- !u!65 &-5225114935608289368
 BoxCollider:
   m_ObjectHideFlags: 0

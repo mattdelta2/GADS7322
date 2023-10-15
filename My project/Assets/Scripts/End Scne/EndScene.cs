@@ -7,14 +7,7 @@ using UnityEngine.SceneManagement;
 public class EndScene : MonoBehaviour
 {
 
-    public TextMeshProUGUI endScore;
 
-    public GameManager GameManager;
-
-    private void Start()
-    {
-        endScore.text += GameManager.score.ToString();
-    }
 
 
 

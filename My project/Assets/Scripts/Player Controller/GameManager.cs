@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
         {
             maxX = 2793F;
             cameraController.minXMax = new Vector2(221, 2617);
+            UnlockNextRoom();
+
 
         }
 
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
         {
             maxX = 4732;
             cameraController.minXMax = new Vector2(221, 4630);
+            FinalRoom();
         }
     }
 
@@ -113,9 +116,59 @@ public class GameManager : MonoBehaviour
 
     void UnlockNextRoom()
     {
-        //Instantiate(nextRoomPlants, nextRoomSpawnArea.position, Quaternion.identity);
+        Vector2[] nextRoomPlantPosistions = new Vector2[]
+        {
+            new Vector2(2843,711),
+            new Vector2(2843,557),
+            new Vector2(2010,159)
+
+        };
+
+        if(nextRoomPlantPosistions.Length != nextRoomPlants.Length)
+        {
+            Debug.LogError("Number of plant positions must match the number of plant prefabs.");
+            return;
+
+        }
+
+        for(int i = 0;i < nextRoomPlantPosistions.Length;i++)
+        {
+            GameObject nextRoomPlant = Instantiate(nextRoomPlants[i]);
+
+            nextRoomPlant.transform.position = nextRoomPlantPosistions[i];
+        }
         nextRoomUnlocked = true;
 
+    }
+
+    void FinalRoom()
+    {
+        Vector2[] LastRoomPlantPosistions = new Vector2[]
+       {
+            new Vector2(3863,159),
+            new Vector2(4207,159),
+            new Vector2(4609,191),
+            new Vector2(3769, 415)
+
+       };
+
+        if (LastRoomPlantPosistions.Length != finalRoomPlants.Length)
+        {
+            Debug.LogError("Number of plant positions must match the number of plant prefabs.");
+            return;
+
+        }
+
+        for (int i = 0; i < LastRoomPlantPosistions.Length; i++)
+        {
+            GameObject nextRoomPlant = Instantiate(finalRoomPlants[i]);
+
+            nextRoomPlant.transform.position = LastRoomPlantPosistions[i];
+        }
+        
+
+
+        lastRoomUnlocked = true;
     }
 
 
