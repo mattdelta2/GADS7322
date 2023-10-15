@@ -1,83 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class Plant : MonoBehaviour
 {
-    public int maxWater = 100; // Maximum water the plant can hold.
-    public int currentWater = 0; // Current water level of the plant.
-    public float growthRate; // Rate at which the plant grows.
-    public string plantName = "Plant"; //property for the plants name
+    
+    public float happyThreshold = 50f;
+    public float sadThreshold = 20f;
 
-    public GameObject seedlingSprite; // Reference to the seedling sprite.
-    public GameObject matureSprite; // Reference to the mature plant sprite.
-    public GameObject floweringSprite; // Reference to the flowering plant sprite.
+    public SpriteRenderer plantRenderer;
 
+    public Sprite happySprite;
+    public Sprite sadSprite;
 
+    public bool IsInSunlight { get; set; } // A property to determine if the plant is in sunlight or shade.
 
-    private PlantState currentState;
+    public float waterLevel = 100f;
+    public float waterDrainRate = 0.5f;
 
-    private enum PlantState
-    {
-        Seedling,
-        Mature,
-        Flowering
-    }
+    private bool isHappy = true;
 
 
-
-    void Start()
-    {
-        currentState = PlantState.Seedling;
-        UpdatePlantAppearance();
-
-    }
 
 
     void Update()
     {
-        // Check if the plant has enough water to grow.
-        if (currentWater >= maxWater)
+        waterLevel -= waterDrainRate * Time.deltaTime;
+        if (waterLevel <= sadThreshold && isHappy)
         {
-            Grow();
+            ChangePlantState(false);
+           // waterLevel -= waterDrainRate * Time.deltaTime;
+        }
+        else if (waterLevel >= happyThreshold && !isHappy)
+        {
+            ChangePlantState(true);
+            //waterLevel -= waterDrainRate * Time.deltaTime;
+        }
+        if(waterLevel <= 0)
+        {
+            Time.timeScale = 0f;
+            SceneManager.LoadScene("End Scene");
         }
     }
 
-    public void WaterPlant(int waterAmount)
+    public void WaterPlant(float waterAmount)
     {
-        currentWater += waterAmount;
-        // Clamp the current water level to not exceed the maximum.
-        currentWater = Mathf.Clamp(currentWater, 0, maxWater);
+        waterLevel += waterAmount;
+        waterLevel = Mathf.Clamp(waterLevel, 0f, 100f);
+    }
+
+    private void ChangePlantState(bool happy)
+    {
+        isHappy = happy;
+
+        plantRenderer.sprite = isHappy ? happySprite : sadSprite;
+        
     }
 
 
-    private void Grow()
-    {
-        switch (currentState)
-        {
-            case PlantState.Seedling:
-                currentState = PlantState.Mature;
-                break;
-            case PlantState.Mature:
-                currentState = PlantState.Flowering;
-                break;
-            case PlantState.Flowering:
-                // The plant has reached the final stage.
-                break;
-        }
-
-        currentWater = 0; // Reset the water level after growing.
-        UpdatePlantAppearance();
-
-    }
-
-
-    private void UpdatePlantAppearance()
-    {
-        // Set the active sprite based on the current growth stage.
-        seedlingSprite.SetActive(currentState == PlantState.Seedling);
-        matureSprite.SetActive(currentState == PlantState.Mature);
-        floweringSprite.SetActive(currentState == PlantState.Flowering);
-    }
 }

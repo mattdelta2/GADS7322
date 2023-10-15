@@ -14,8 +14,14 @@ public class UIController : MonoBehaviour
 
     public GameObject score;
 
+    public GameObject EndScreen;
 
-    
+    public Plant plant;
+
+    public GameObject endScreen;
+
+
+
 
 
 
@@ -49,6 +55,5 @@ public class UIController : MonoBehaviour
         wateringCan.SetActive(true);
         score.SetActive(true);
     }
-
 
 }

@@ -14,9 +14,7 @@ public class PlantSpawner : MonoBehaviour
 
         // Access and display the customized properties.
         Plant plantScript = newPlant.GetComponent<Plant>();
-        Debug.Log("Plant Name: " + plantScript.plantName);
-        Debug.Log("Max Water: " + plantScript.maxWater);
-        Debug.Log("Growth Rate: " + plantScript.growthRate);
+
     }
 
 
