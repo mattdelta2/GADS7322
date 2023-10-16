@@ -112,6 +112,10 @@ MonoBehaviour:
   roomMaxX: 3321
   roomMinY: 63
   roomMaxY: 702
+  windows:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &-1506258370237505681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +141,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8920eda693fd0347ac095de074683e8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.358
+  m_Volume: 0.171
   m_Pitch: 1
   Loop: 0
   Mute: 0

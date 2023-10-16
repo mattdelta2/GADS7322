@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d32a9a5a8f3c01d49b58870f162d602f
+guid: f8a5839cedccfa241839fe65755132e2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_0
+      name: PurplePitcherUnHappy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d81ccfb391b9043a7730251193d2a8
-      internalID: 717808697
+      spriteID: 325ddb80f6ceece4595af0098eef223f
+      internalID: -82762351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_1
+      name: PurplePitcherUnHappy_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c04717061a73984db5c428ec30595c0
-      internalID: 173706758
+      spriteID: 979164604d903674697eecb4da10c8fe
+      internalID: 914649474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_2
+      name: PurplePitcherUnHappy_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6505bcddb67ded244b02348d3bcb0d7b
-      internalID: 497899250
+      spriteID: 762b8ff51460c614bbbd4cf68d138b32
+      internalID: 1088067373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_3
+      name: PurplePitcherUnHappy_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004b53772ff13b84fa2b165ec9c56c59
-      internalID: 131763133
+      spriteID: 4b76da992f3ddea489891afee8c34deb
+      internalID: -765816832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_4
+      name: PurplePitcherUnHappy_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ad9238f6b5c9d54daf7d2033cbb61b8
-      internalID: -573926857
+      spriteID: a8034c549559fbe4383d9e90302400ca
+      internalID: 1920655087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_5
+      name: PurplePitcherUnHappy_5
       rect:
         serializedVersion: 2
         x: 0
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf81639514f5574b852d4fd0c529e7a
-      internalID: -403065127
+      spriteID: 28f610d342f680e43a57f0718599ad9b
+      internalID: -1933687143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_6
+      name: PurplePitcherUnHappy_6
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d894ba8f2b4fb2246ac745d7d09b60c4
-      internalID: 1112540840
+      spriteID: 6174bb431a9107145a4a1fceb64ba661
+      internalID: 673436917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_7
+      name: PurplePitcherUnHappy_7
       rect:
         serializedVersion: 2
         x: 128
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d23b7333f8d4664382c523217cc023f
-      internalID: 1448437672
+      spriteID: 954425776720deb46aaaaec644c3ec8b
+      internalID: -571800071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_8
+      name: PurplePitcherUnHappy_8
       rect:
         serializedVersion: 2
         x: 192
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c98e98c9f94a74d9ca9f6fdf6eea31
-      internalID: 12599716
+      spriteID: 58c7330c06ff38f4a936d57558cefd3b
+      internalID: 754354766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Unhealthy_9
+      name: PurplePitcherUnHappy_9
       rect:
         serializedVersion: 2
         x: 256
@@ -307,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518b4eaed11f66b42a5eae3a5e13d6d7
-      internalID: -272538557
+      spriteID: 0e2da87f7e0bf0b4a833bdf431eb0587
+      internalID: -770736370
       vertices: []
       indices: 
       edges: []
@@ -324,16 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Purple_Pitcher_Unhealthy_2: 497899250
-      Purple_Pitcher_Unhealthy_4: -573926857
-      Purple_Pitcher_Unhealthy_7: 1448437672
-      Purple_Pitcher_Unhealthy_0: 717808697
-      Purple_Pitcher_Unhealthy_3: 131763133
-      Purple_Pitcher_Unhealthy_8: 12599716
-      Purple_Pitcher_Unhealthy_6: 1112540840
-      Purple_Pitcher_Unhealthy_9: -272538557
-      Purple_Pitcher_Unhealthy_1: 173706758
-      Purple_Pitcher_Unhealthy_5: -403065127
+      PurplePitcherUnHappy_7: -571800071
+      PurplePitcherUnHappy_5: -1933687143
+      PurplePitcherUnHappy_0: -82762351
+      PurplePitcherUnHappy_3: -765816832
+      PurplePitcherUnHappy_6: 673436917
+      PurplePitcherUnHappy_9: -770736370
+      PurplePitcherUnHappy_1: 914649474
+      PurplePitcherUnHappy_8: 754354766
+      PurplePitcherUnHappy_2: 1088067373
+      PurplePitcherUnHappy_4: 1920655087
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

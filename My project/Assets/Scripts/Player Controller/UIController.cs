@@ -23,7 +23,18 @@ public class UIController : MonoBehaviour
     public WateringCan WateringCan;
 
     
+    public WindowManager windowManager;
 
+    public int roomIndexToControl;
+    private TextMeshProUGUI button;
+
+
+
+    public void ToggleRoomWindow()
+    {
+        Debug.Log("window clicked");
+        windowManager.ToggleRoomWindow(roomIndexToControl);
+    }
 
 
 
@@ -59,6 +70,7 @@ public class UIController : MonoBehaviour
                         Debug.Log("Plant Clicked!");
                         // Increase the water level of the plant using the watering can's water amount.
                         plant.WaterPlant(WateringCan.WaterAmount);
+                        WateringCan.IsWatering = false;
                     }
                 }
             }

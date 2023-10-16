@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e5a2c805b287b74583172b1af08e743
+guid: 0428316839408eb40ac68eba7c7d3466
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_0
+      name: LadySlipperUnHappy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c88d7af21bc8f45489b9d1f35c63f5c0
-      internalID: 1485028568
+      spriteID: 1a5da64f60ce8fb4b9f0e2dab006ccef
+      internalID: 517492527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_1
+      name: LadySlipperUnHappy_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39bec2116ad3b24bbae74541ff6bb4e
-      internalID: -300152623
+      spriteID: 66418f4d7a10b9747ba2e730fa45808d
+      internalID: -903414411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_2
+      name: LadySlipperUnHappy_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b63aea8f9b746644a96021d1ca9e410
-      internalID: -98525345
+      spriteID: fe47506369a5ae547a6eebc8579c5f03
+      internalID: -675767829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_3
+      name: LadySlipperUnHappy_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4618a02b78e73b545b287456ff6b4497
-      internalID: -1839006811
+      spriteID: 3337a99172807fb44aa737039c5ad57d
+      internalID: -1745387763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_4
+      name: LadySlipperUnHappy_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d13a248e3051ac24f864dbcb97e29b9f
-      internalID: 1256376288
+      spriteID: 063a7490abb63384fb21f8f7aeedf667
+      internalID: 856179747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_5
+      name: LadySlipperUnHappy_5
       rect:
         serializedVersion: 2
         x: 0
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c068561703820c4b878b5fce3fe5cc2
-      internalID: -1219445580
+      spriteID: cb5e01c128f143b41acde4d9ad5aaa95
+      internalID: 1248087665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_6
+      name: LadySlipperUnHappy_6
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cabd916dea60f442a912fa477ac6e88
-      internalID: -39970203
+      spriteID: 54212d6b6f6f7214f80ff4a1e09bb1fd
+      internalID: 393524154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_7
+      name: LadySlipperUnHappy_7
       rect:
         serializedVersion: 2
         x: 128
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eecaf5ed478ca34aa8f323b3c28c2d0
-      internalID: 2124628526
+      spriteID: 581c9165714c10549ac4f6eb66ebf396
+      internalID: -1686225555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple_Pitcher_Happy_8
+      name: LadySlipperUnHappy_8
       rect:
         serializedVersion: 2
         x: 192
@@ -286,29 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73be61ccc3ae61a4495d278744410da1
-      internalID: -1775117481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple_Pitcher_Happy_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b592c1011e3532498748bd19505e82d
-      internalID: -1519849520
+      spriteID: 9cbd199835da80440934fee9c17a9a88
+      internalID: -1484855494
       vertices: []
       indices: 
       edges: []
@@ -324,16 +303,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Purple_Pitcher_Happy_0: 1485028568
-      Purple_Pitcher_Happy_2: -98525345
-      Purple_Pitcher_Happy_6: -39970203
-      Purple_Pitcher_Happy_8: -1775117481
-      Purple_Pitcher_Happy_7: 2124628526
-      Purple_Pitcher_Happy_3: -1839006811
-      Purple_Pitcher_Happy_5: -1219445580
-      Purple_Pitcher_Happy_9: -1519849520
-      Purple_Pitcher_Happy_1: -300152623
-      Purple_Pitcher_Happy_4: 1256376288
+      LadySlipperUnHappy_6: 393524154
+      LadySlipperUnHappy_0: 517492527
+      LadySlipperUnHappy_5: 1248087665
+      LadySlipperUnHappy_3: -1745387763
+      LadySlipperUnHappy_4: 856179747
+      LadySlipperUnHappy_2: -675767829
+      LadySlipperUnHappy_1: -903414411
+      LadySlipperUnHappy_8: -1484855494
+      LadySlipperUnHappy_7: -1686225555
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

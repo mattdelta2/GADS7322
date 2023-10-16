@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1485028568, guid: 2e5a2c805b287b74583172b1af08e743, type: 3}
+  m_Sprite: {fileID: 876115832, guid: b55499dd381bf324b836b89a64bd818e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
   happyThreshold: 50
   sadThreshold: 20
   plantRenderer: {fileID: 588506834295848958}
-  happySprite: {fileID: 21300000, guid: 79792a4f1ac8c4341bb867d7109a0146, type: 3}
-  sadSprite: {fileID: 21300000, guid: e5a9cc2f924c5504d9177c68b7c00be0, type: 3}
+  happySprite: {fileID: 876115832, guid: b55499dd381bf324b836b89a64bd818e, type: 3}
+  sadSprite: {fileID: -82762351, guid: f8a5839cedccfa241839fe65755132e2, type: 3}
   waterLevel: 100
   waterDrainRate: 4
   targetPosition: {x: 0, y: 0}
@@ -112,6 +112,10 @@ MonoBehaviour:
   roomMaxX: 3321
   roomMinY: 63
   roomMaxY: 702
+  windows:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!65 &5135508069855081495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +141,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8920eda693fd0347ac095de074683e8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.358
+  m_Volume: 0.171
   m_Pitch: 1
   Loop: 0
   Mute: 0

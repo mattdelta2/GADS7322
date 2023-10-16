@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71e94e3bf3ada62428f249c990c5d586
+guid: c9296b51a6585a946a2b86a0f13ba628
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_0
+      name: LadySlipperHappy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07390e648b33a8546af3fdcfa9cd7e6c
-      internalID: -1113097236
+      spriteID: 0748a11113dcfaf4e8605cbee8ea7244
+      internalID: 1842858921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_1
+      name: LadySlipperHappy_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca0982566b2fd24c867010f48b1eb94
-      internalID: 1055322500
+      spriteID: b898dba85f5e48648aba73122cc2022d
+      internalID: 2033172240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_2
+      name: LadySlipperHappy_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 392c5c8dd754f734fa88dbf3cf0c510a
-      internalID: 951679669
+      spriteID: cd7459d5df431cf42be5bfd836050609
+      internalID: 1856105728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_3
+      name: LadySlipperHappy_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cb61a5f21b583048a2ddf8ec16c0dbf
-      internalID: 458445454
+      spriteID: f393a3ce63b0af5418bcad7ef4ac9740
+      internalID: 358399887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_4
+      name: LadySlipperHappy_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d83d050ac17bf084ea226879483be52d
-      internalID: -72140905
+      spriteID: 829cdbc885296ba4c8a9aea622d55d4a
+      internalID: -1386474034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_5
+      name: LadySlipperHappy_5
       rect:
         serializedVersion: 2
         x: 0
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce64d2e52ba24454b9cacc4196d1d101
-      internalID: 338563936
+      spriteID: bfa9bfc757cb9bf4a951f3f1f2cc289c
+      internalID: 1445535831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_6
+      name: LadySlipperHappy_6
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ceb9ca6587d434c9fe89bbebe04c27
-      internalID: 1644773692
+      spriteID: 3b3a1ea85bc199342acb0489ddbb40e5
+      internalID: -617908507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_7
+      name: LadySlipperHappy_7
       rect:
         serializedVersion: 2
         x: 128
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735ede6169a763d48b1095b257fe2e81
-      internalID: 858142712
+      spriteID: bb660ae3d469dab438a5eb3bff516a2c
+      internalID: -891933046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Unhealthy_8
+      name: LadySlipperHappy_8
       rect:
         serializedVersion: 2
         x: 192
@@ -286,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ed9430441f4674eb70d686933fdfd1
-      internalID: -1193824344
+      spriteID: 66bdbf812683cfc4c866b822552aff5c
+      internalID: 2036543045
       vertices: []
       indices: 
       edges: []
@@ -303,15 +303,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lady_Slipper_Unhealthy_6: 1644773692
-      Lady_Slipper_Unhealthy_8: -1193824344
-      Lady_Slipper_Unhealthy_1: 1055322500
-      Lady_Slipper_Unhealthy_4: -72140905
-      Lady_Slipper_Unhealthy_5: 338563936
-      Lady_Slipper_Unhealthy_3: 458445454
-      Lady_Slipper_Unhealthy_0: -1113097236
-      Lady_Slipper_Unhealthy_7: 858142712
-      Lady_Slipper_Unhealthy_2: 951679669
+      LadySlipperHappy_5: 1445535831
+      LadySlipperHappy_8: 2036543045
+      LadySlipperHappy_4: -1386474034
+      LadySlipperHappy_6: -617908507
+      LadySlipperHappy_3: 358399887
+      LadySlipperHappy_0: 1842858921
+      LadySlipperHappy_2: 1856105728
+      LadySlipperHappy_1: 2033172240
+      LadySlipperHappy_7: -891933046
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 1079053315}
   - component: {fileID: 1079053314}
   m_Layer: 0
-  m_Name: ambient-wave-48-tribute-17243
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,7 +778,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2c0b4ce057955534d837f1e7431acc23, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.114
+  m_Volume: 0.039
   m_Pitch: 1
   Loop: 1
   Mute: 0

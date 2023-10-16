@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Plant : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Plant : MonoBehaviour
 
     private bool isHappy = true;
 
+    private GameManager gameManager;
+
     //Movement Variables
     public Vector2 targetPosition;
     private bool isMoving = false;
@@ -41,6 +44,10 @@ public class Plant : MonoBehaviour
     //Adding Animator
     private Animator animator;
 
+    private bool isWindowOpen = false;
+
+
+
     private void Start()
     {
         wateringCan = FindObjectOfType<WateringCan>();
@@ -48,6 +55,7 @@ public class Plant : MonoBehaviour
         wateringCan.AddPlant(this);
 
         animator = GetComponent<Animator>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
 
@@ -55,37 +63,46 @@ public class Plant : MonoBehaviour
 
     void Update()
     {
-        waterLevel -= waterDrainRate * Time.deltaTime;
-        if (waterLevel <= sadThreshold && isHappy)
+        if (isWindowOpen)
         {
-            ChangePlantState(false);
-           // waterLevel -= waterDrainRate * Time.deltaTime;
+            waterLevel -= (waterDrainRate - 2) * Time.deltaTime;
         }
-        else if (waterLevel >= happyThreshold && !isHappy)
+        else
         {
-            ChangePlantState(true);
-            //waterLevel -= waterDrainRate * Time.deltaTime;
-        }
-        if(waterLevel <= 0)
-        {
-            Time.timeScale = 0f;
-            SceneManager.LoadScene("End Scene");
-        }
-
-        if(isMoving)
-        {
-            //move plant towards new position
-            Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed*  Time.deltaTime);
-
-            //check to see if the position is in the same room as the plant
-            newPosition.x = Mathf.Clamp(newPosition.x, roomMinX, roomMaxX);
-            newPosition.y = Mathf.Clamp(newPosition.y, roomMinY, roomMaxY);
-
-
-            //checks if plant has reached position
-            if((Vector2)transform.position == targetPosition)
+            waterLevel -= waterDrainRate * Time.deltaTime;
+            if (waterLevel <= sadThreshold && isHappy)
             {
-                isMoving = false;
+                ChangePlantState(false);
+                // waterLevel -= waterDrainRate * Time.deltaTime;
+            }
+            else if (waterLevel >= happyThreshold && !isHappy)
+            {
+                ChangePlantState(true);
+                //waterLevel -= waterDrainRate * Time.deltaTime;
+            }
+            if (waterLevel <= 0)
+            {
+                
+                Time.timeScale = 0f;
+                SceneManager.LoadScene("End Scene");
+                gameManager.endGame();
+            }
+
+            if (isMoving)
+            {
+                //move plant towards new position
+                Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+
+                //check to see if the position is in the same room as the plant
+                newPosition.x = Mathf.Clamp(newPosition.x, roomMinX, roomMaxX);
+                newPosition.y = Mathf.Clamp(newPosition.y, roomMinY, roomMaxY);
+
+
+                //checks if plant has reached position
+                if ((Vector2)transform.position == targetPosition)
+                {
+                    isMoving = false;
+                }
             }
         }
     }
@@ -123,5 +140,25 @@ public class Plant : MonoBehaviour
         Debug.Log("Moving to target: " + target);
     }
 
+    public Canvas[] windows;
+
+    public void ToggleWindow(int windowIndex)
+    {
+        // Ensure the windowIndex is valid.
+        if (windowIndex >= 0 && windowIndex < windows.Length)
+        {
+            // Toggle the state of the Canvas element at the specified index.
+            windows[windowIndex].gameObject.SetActive(!windows[windowIndex].gameObject.activeSelf);
+
+            // Add logic for reducing water drain rate if the window is open.
+            if (windows[windowIndex].gameObject.activeSelf)
+            {
+                waterLevel -= (waterDrainRate - 2) * Time.deltaTime;
+            }
+
+            
+        }
+
+    }
 
 }

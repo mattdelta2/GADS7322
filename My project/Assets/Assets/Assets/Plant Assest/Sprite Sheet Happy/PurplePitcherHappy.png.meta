@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6226edf4eb3ccb54c9dfaa96e359c9ca
+guid: b55499dd381bf324b836b89a64bd818e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_0
+      name: PurplePitcherHappy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd6c41afae40d6e4997bba120bcbaef5
-      internalID: -1875515272
+      spriteID: 52ff39b0235dcb04ea8553c8db884128
+      internalID: 876115832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_1
+      name: PurplePitcherHappy_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25cda62c658f1c140aa382595c3eb25d
-      internalID: -95931079
+      spriteID: 85abe7a46b0b9a44a889b2470c14f146
+      internalID: -937063924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_2
+      name: PurplePitcherHappy_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e758de1ae5bd70f4397db0928cc55a15
-      internalID: 2086471303
+      spriteID: b1ce8af5b8c12fd41a0a865d26ebe5b6
+      internalID: -681721789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_3
+      name: PurplePitcherHappy_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d21669d8134e7874ba86809c4bfc9094
-      internalID: -1096662365
+      spriteID: 15c03ac80e50377419a3be175b8a5515
+      internalID: 1586737693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_4
+      name: PurplePitcherHappy_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb320f2ca687b9409da3733f24940d3
-      internalID: -1280192827
+      spriteID: 6a3a0a1d5586811419aa76f9499a1fa8
+      internalID: 1601841026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_5
+      name: PurplePitcherHappy_5
       rect:
         serializedVersion: 2
         x: 0
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf95260e48752c4bb1f6a567d3f087a
-      internalID: 1071401783
+      spriteID: 95b445aee708803488e2671c322932fd
+      internalID: -1574417304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_6
+      name: PurplePitcherHappy_6
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eac4a74f28610e4babc106882160ec0
-      internalID: -640812006
+      spriteID: b64ff3cc51e12ee4c88bf0ed6a08cacf
+      internalID: -1531806080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_7
+      name: PurplePitcherHappy_7
       rect:
         serializedVersion: 2
         x: 128
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5baf72c0884e32f4cab41409a9fa1f53
-      internalID: -534776017
+      spriteID: 4e3235629cb36114ca68b844aa34759c
+      internalID: -698730565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lady_Slipper_Happy_8
+      name: PurplePitcherHappy_8
       rect:
         serializedVersion: 2
         x: 192
@@ -286,8 +286,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5edd328fb626a4da8479c4b62cc326
-      internalID: 58367397
+      spriteID: dea549c54cb41c440a6be2a443912a04
+      internalID: 1963320193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurplePitcherHappy_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f8446190139ac4c9c53eae56904c39
+      internalID: -1695881785
       vertices: []
       indices: 
       edges: []
@@ -303,15 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lady_Slipper_Happy_8: 58367397
-      Lady_Slipper_Happy_0: -1875515272
-      Lady_Slipper_Happy_1: -95931079
-      Lady_Slipper_Happy_3: -1096662365
-      Lady_Slipper_Happy_5: 1071401783
-      Lady_Slipper_Happy_2: 2086471303
-      Lady_Slipper_Happy_6: -640812006
-      Lady_Slipper_Happy_4: -1280192827
-      Lady_Slipper_Happy_7: -534776017
+      PurplePitcherHappy_3: 1586737693
+      PurplePitcherHappy_8: 1963320193
+      PurplePitcherHappy_9: -1695881785
+      PurplePitcherHappy_0: 876115832
+      PurplePitcherHappy_6: -1531806080
+      PurplePitcherHappy_1: -937063924
+      PurplePitcherHappy_2: -681721789
+      PurplePitcherHappy_7: -698730565
+      PurplePitcherHappy_4: 1601841026
+      PurplePitcherHappy_5: -1574417304
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
