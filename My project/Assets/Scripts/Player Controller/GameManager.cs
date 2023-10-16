@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
 
     public CameraController cameraController;
 
-    private float LivingRoomUnlock = 10f;
+    private float LivingRoomUnlock = 100f;
 
-    private float studyRoomUnlock = 20f;
+    private float studyRoomUnlock = 150f;
 
     private float lastTimeScoored;
 
@@ -148,7 +148,7 @@ public class GameManager : MonoBehaviour
             new Vector2(3863,159),
             new Vector2(4207,159),
             new Vector2(4609,191),
-            new Vector2(3769, 415)
+            new Vector2(3778, 441)
 
        };
 
@@ -172,13 +172,13 @@ public class GameManager : MonoBehaviour
     }
 
 
-   /* void endGame()
+    void endGame()
     {
 
         finalScore = score;
 
         PlayerPrefs.SetFloat("FinalScore", finalScore);
 
-    }*/
+    }
 
 }

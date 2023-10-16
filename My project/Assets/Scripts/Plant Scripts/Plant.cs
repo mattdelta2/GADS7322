@@ -23,6 +23,28 @@ public class Plant : MonoBehaviour
 
     private bool isHappy = true;
 
+    //Movement Variables
+    public Vector2 targetPosition;
+    private bool isMoving = false;
+    private float moveSpeed = 5f;
+
+    //Room boundries
+
+    public float roomMinX;
+    public float roomMaxX;
+    public float roomMinY;
+    public float roomMaxY;
+
+    //Adding watering can
+    private WateringCan wateringCan;
+
+    private void Start()
+    {
+        wateringCan = FindObjectOfType<WateringCan>();
+
+        wateringCan.AddPlant(this);
+    }
+
 
 
 
@@ -44,6 +66,23 @@ public class Plant : MonoBehaviour
             Time.timeScale = 0f;
             SceneManager.LoadScene("End Scene");
         }
+
+        if(isMoving)
+        {
+            //move plant towards new position
+            Vector2 newPosition = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed*  Time.deltaTime);
+
+            //check to see if the position is in the same room as the plant
+            newPosition.x = Mathf.Clamp(newPosition.x, roomMinX, roomMaxX);
+            newPosition.y = Mathf.Clamp(newPosition.y, roomMinY, roomMaxY);
+
+
+            //checks if plant has reached position
+            if((Vector2)transform.position == targetPosition)
+            {
+                isMoving = false;
+            }
+        }
     }
 
     public void WaterPlant(float waterAmount)
@@ -57,7 +96,25 @@ public class Plant : MonoBehaviour
         isHappy = happy;
 
         plantRenderer.sprite = isHappy ? happySprite : sadSprite;
+
+
+        if(!isHappy)
+        {
+            AudioSource audioSource  = GetComponent<AudioSource>();
+
+            if(audioSource != null && audioSource.clip != null)
+            {
+                audioSource.Play();
+            }
+        }
         
+    }
+
+    public void MoveToTargetPosition(Vector2 target)
+    {
+        targetPosition = target;
+        isMoving = true;
+        Debug.Log("Moving to target: " + target);
     }
 
 

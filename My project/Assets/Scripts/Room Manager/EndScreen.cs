@@ -1,26 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndScreen : MonoBehaviour
 {
+    public TextMeshProUGUI FinalScore;
 
-    
- 
-
-    public void MainMenu()
+        private void Start()
     {
-        SceneManager.LoadScene("Main Menu");
+        float finalScore = PlayerPrefs.GetFloat("FinalScore", 0);
+
+        FinalScore.text += finalScore;
+
     }
 
-    public void Exit()
-    {
-        Application.Quit();
-    }
 
-    
+
+
+
+
 
 
 }

@@ -808,12 +808,17 @@ MonoBehaviour:
 
     -Click water can to enable watering mode
 
-    -Open
-    journal to read about the plants
+    --Click
+    on Plant to water plant
+
+    --After you have clicked on a Plant the Watering
+    Mode Disables
+
+    -Open journal to read about the plants
 
 
-    -All plants within game are either endangered
-    or going endangered'
+    -All plants within
+    game are either endangered or going endangered'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -20,6 +20,8 @@ public class UIController : MonoBehaviour
 
     public GameObject endScreen;
 
+    public WateringCan WateringCan;
+
 
 
 
@@ -29,6 +31,30 @@ public class UIController : MonoBehaviour
     {
         bookPanel.SetActive(false);
         
+    }
+
+    private void Update()
+    {
+        if (WateringCan.IsWatering)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Plant plant = hit.collider.GetComponent<Plant>();
+
+                    if (plant != null)
+                    {
+                        Debug.Log("Plant Clicked!");
+                        // Increase the water level of the plant using the watering can's water amount.
+                        plant.WaterPlant(WateringCan.WaterAmount);
+                    }
+                }
+            }
+        }
     }
 
 
@@ -44,8 +70,11 @@ public class UIController : MonoBehaviour
 
     public void EnableWatering()
     {
-        Debug.Log("Watering can clicked");
+        Debug.Log("Can clicked");
+        WateringCan.IsWatering = true;
     }
+   
+    
 
     public void Close()
     {
