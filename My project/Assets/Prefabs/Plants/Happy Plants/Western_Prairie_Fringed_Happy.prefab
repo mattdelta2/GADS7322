@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7503856821885346963}
   - component: {fileID: -7708555623500040620}
   - component: {fileID: -7145267118990240027}
+  - component: {fileID: 1800256678235918355}
   m_Layer: 0
   m_Name: Western_Prairie_Fringed_Happy
   m_TagString: Plant
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 626af5ca7ff8d094da1c7c4bdf510b3a, type: 3}
+  m_Sprite: {fileID: -1119211702, guid: 64920ced726ef6d47b83c805e958c273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -220,3 +221,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1800256678235918355
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750809031830991012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a54c283abcb5ec41b6794ee8a0314d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

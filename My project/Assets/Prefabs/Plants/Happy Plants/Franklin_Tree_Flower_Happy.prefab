@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3204845819995668576}
   - component: {fileID: 5968516220681866578}
   - component: {fileID: 7931842570030274421}
+  - component: {fileID: 6156057194665815852}
   m_Layer: 0
   m_Name: Franklin_Tree_Flower_Happy
   m_TagString: Plant
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e7e3a8ffde948424c9c8674ea4c8c5f6, type: 3}
+  m_Sprite: {fileID: 1243403261, guid: e9440214cba4a76448d192c35f1eb5e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +104,7 @@ MonoBehaviour:
   sadThreshold: 20
   plantRenderer: {fileID: 5737805616578330415}
   happySprite: {fileID: 21300000, guid: e7e3a8ffde948424c9c8674ea4c8c5f6, type: 3}
-  sadSprite: {fileID: 21300000, guid: 781be04690f31404c9e3e12ed8f635ff, type: 3}
+  sadSprite: {fileID: 1818631059, guid: 0c0cc42ac69e61b43ab843e69f68fe04, type: 3}
   waterLevel: 100
   waterDrainRate: 2.5
   targetPosition: {x: 0, y: 0}
@@ -220,3 +221,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &6156057194665815852
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481883416449940577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da504541866176445b5de803e2759cf9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

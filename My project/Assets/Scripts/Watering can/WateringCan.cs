@@ -7,8 +7,16 @@ public class WateringCan : MonoBehaviour
     public float WaterAmount = 50f;
     private bool isWatering = false;
 
+    
+
     // Create a list to hold references to plants
     private List<Plant> plants = new List<Plant>();
+
+
+    private void Start()
+    {
+        
+    }
 
     public bool IsWatering // Renamed from IsWatering to avoid conflict
     {
@@ -40,4 +48,8 @@ public class WateringCan : MonoBehaviour
         Debug.Log("Stopped Watering");
         isWatering = false;
     }
+
+
+
+
 }

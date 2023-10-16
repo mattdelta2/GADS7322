@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -2476218163200673680}
   - component: {fileID: 7820801761896743290}
   - component: {fileID: 4411454797330331192}
+  - component: {fileID: 4135786780760233991}
   m_Layer: 0
   m_Name: Ghost_Orchid_Healthy
   m_TagString: Plant
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: aec08fca38204b84f8cdd1adac34ad0a, type: 3}
+  m_Sprite: {fileID: -1348507800, guid: e5b5c42f8045ca146a982ae2f81ed773, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +104,7 @@ MonoBehaviour:
   sadThreshold: 20
   plantRenderer: {fileID: 1058723480634026262}
   happySprite: {fileID: 21300000, guid: aec08fca38204b84f8cdd1adac34ad0a, type: 3}
-  sadSprite: {fileID: 21300000, guid: 72ca4f64766911e49a313b6b1e8b6bdd, type: 3}
+  sadSprite: {fileID: 1464843665, guid: b11a919d35e8ebf44b280e50922640a9, type: 3}
   waterLevel: 100
   waterDrainRate: 3
   targetPosition: {x: 0, y: 0}
@@ -220,3 +221,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4135786780760233991
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702985688773932249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a438944e5e0d6ec41a0d3954c1b1030d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

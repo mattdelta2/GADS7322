@@ -22,6 +22,8 @@ public class UIController : MonoBehaviour
 
     public WateringCan WateringCan;
 
+    
+
 
 
 
@@ -29,6 +31,7 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
+        
         bookPanel.SetActive(false);
         
     }
@@ -48,6 +51,11 @@ public class UIController : MonoBehaviour
 
                     if (plant != null)
                     {
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        if (audioSource != null && audioSource.clip != null)
+                        {
+                            audioSource.Play();
+                        }
                         Debug.Log("Plant Clicked!");
                         // Increase the water level of the plant using the watering can's water amount.
                         plant.WaterPlant(WateringCan.WaterAmount);
@@ -58,7 +66,7 @@ public class UIController : MonoBehaviour
     }
 
 
-    public void OpenBook()
+        public void OpenBook()
     {
         bookPanel.SetActive(true);
         Time.timeScale = 0f;
@@ -70,6 +78,7 @@ public class UIController : MonoBehaviour
 
     public void EnableWatering()
     {
+        
         Debug.Log("Can clicked");
         WateringCan.IsWatering = true;
     }

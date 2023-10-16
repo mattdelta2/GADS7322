@@ -38,11 +38,16 @@ public class Plant : MonoBehaviour
     //Adding watering can
     private WateringCan wateringCan;
 
+    //Adding Animator
+    private Animator animator;
+
     private void Start()
     {
         wateringCan = FindObjectOfType<WateringCan>();
 
         wateringCan.AddPlant(this);
+
+        animator = GetComponent<Animator>();
     }
 
 
@@ -96,6 +101,7 @@ public class Plant : MonoBehaviour
         isHappy = happy;
 
         plantRenderer.sprite = isHappy ? happySprite : sadSprite;
+        animator.SetBool("IsHappy", isHappy);
 
 
         if(!isHappy)

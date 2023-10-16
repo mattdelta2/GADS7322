@@ -8,20 +8,16 @@ using UnityEngine.SceneManagement;
 public class EndScreen : MonoBehaviour
 {
     public TextMeshProUGUI FinalScore;
+    
 
-        private void Start()
+     void Start()
     {
         float finalScore = PlayerPrefs.GetFloat("FinalScore", 0);
 
         FinalScore.text += finalScore;
 
+        
+
     }
-
-
-
-
-
-
-
 
 }

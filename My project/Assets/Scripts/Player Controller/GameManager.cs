@@ -172,12 +172,13 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void endGame()
+     public void endGame()
     {
 
         finalScore = score;
 
         PlayerPrefs.SetFloat("FinalScore", finalScore);
+        PlayerPrefs.Save();
 
     }
 
